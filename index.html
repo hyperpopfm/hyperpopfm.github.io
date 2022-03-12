@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bassbase. — online music radio</title>
+<link rel="stylesheet" href="style.css">    
+<link rel="shortcut icon" href="images/icon2.png"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+          integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.css"
+          integrity="sha512-jrLDXl9jUPe5DT19ukacvpX39XiErIBZxiaVMDFRe+OAKoBVYO126Dt7cvhMJ3Fja963lboD9DH+ev/2vbEnMw=="
+          crossorigin="anonymous"/>
+</head>
+
+<body style="background-color: #131317;">
+<br>
+<br>
+        <img id="ost_image" class="mx-auto d-block"
+        style="max-height: 120px;" alt="album cover"
+        src="images/logo.png"/>
+</div>
+
+<div style="font-family: rfm_light;font-size: 120%;text-align: center;color: #fff;padding-top: 10px;">24/7 slap house & future house only!</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text-test"">LISTEN NOW!</div>
+<div class="container mx-auto">
+        <div class="channel-boxes mx-auto shadow">
+                <div id="player_title"></div>
+                <div>
+                </div>
+                <div>
+                    <audio autoplay; id="player" controls; style="--plyr-audio-control-color: #fff; --plyr-audio-controls-background: #fff0; --plyr-color-main: #ffffff54; --plyr-control-icon-size: 30px;">
+                        <source src="http://stream.laut.fm/bass-base"
+                                type="audio/mp3"/>
+                    </audio>
+                </div>
+<script type="text/javascript" src="//api.laut.fm/js_tools/lautfm_js_tools.0.10.0.js.min.js" ></script>
+<div id="api_lfm_current_song1_1" class="artist-text">Loading...</div>
+<script type="text/html" id="current_song_template1_1" charset="utf-8">
+<%= "" + this.artist.name + "" %>
+</script> 
+<script type="text/javascript" charset="utf-8"> laut.fm.station('bass-base') 
+.current_song({container:'api_lfm_current_song1_1', template:'current_song_template1_1'}, true); </script>
+</script>
+<div id="api_lfm_current_song1_2" class="title-text">Loading...</div>
+<script type="text/html" id="current_song_template1_2" charset="utf-8">
+<%= "" + this.title + "" %>
+</script> 
+<script type="text/javascript" charset="utf-8"> laut.fm.station('bass-base') 
+.current_song({container:'api_lfm_current_song1_2', template:'current_song_template1_2'}, true); </script>
+</script>
+<br>
+<div id="api_lfm_listener" class="listeners-text2">k <span id="listener" class="listeners-text">Loading...</span></div>
+<script type="text/javascript" charset="utf-8">
+var hoerer = document.getElementById('listener');
+var show_listeners = function(listeners){ listener.innerHTML = listeners}
+laut.fm.station('bass-base').listeners(show_listeners, true);
+</script>
+<br>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>		
+<div class="text-test">SOCIALS</div>
+<p class="aligncenter">                                          
+<a href="https://www.instagram.com/bass-base/" target="_blank">
+<img src="images/igcolor.png" alt="IG" width="150" height="150">
+</a>
+</p>
+</div>
+<br>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
+        integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.polyfilled.min.js"
+        integrity="sha512-7kq7qBtasB6e1rth7fGAVQI6HvobtSHWKqIjsEr+21l2spvu8ZRXvRukXPTEPrExSDXpUHI5FH6xlgGZNNCgeQ=="
+        crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</body>
+</html>
