@@ -31,8 +31,6 @@
 .container {
     display: flex;
     justify-content: center;
-  }
-}
 }
 .artist-text {
 line-height: 1;
