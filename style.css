@@ -32,19 +32,6 @@
     display: flex;
     justify-content: center;
   }
-span { 
-    line-height: 1;
-    padding-top: 5px;
-    font-family:rfm_black;
-    font-size: 170%;
-    color:rgb(255, 255, 255)
-}
-span b { 
-    font-family:rfm_icon;
-    font-size: 300%;
-    padding-top: 50px;
-    margin: auto;
-    color:rgb(255, 255, 255);
 }
 .artist-text {
 line-height: 1;
@@ -78,7 +65,7 @@ color: rgb(255 255 255);
 text-align: center;
 }
 .text-test {
-font-family: rfm_bold;
+font-family: hfm_main;
 font-size: 230%;
 text-align: center;
 color: rgb(255 255 255);
