@@ -1,15 +1,6 @@
 @font-face {
-    font-family: 'rfm_bold'; /*a name to be used later*/
-    src: url('images/rfm_bold.ttf'); /*URL to font*/
-}
-
-@font-face {
-    font-family: 'rfm_light'; /*a name to be used later*/
-    src: url('images/rfm_light.ttf'); /*URL to font*/
-}
-@font-face {
-    font-family: 'rfm_icon'; /*a name to be used later*/
-    src: url('images/rfm_icon.ttf'); /*URL to font*/
+    font-family: 'hfm_main'; /*a name to be used later*/
+    src: url('images/HFM_Main.ttf'); /*URL to font*/
 }
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
