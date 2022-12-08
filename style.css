@@ -18,7 +18,7 @@
     width: 600px;
     margin: auto;
     display: table;
-    background: linear-gradient(to right, #262b25, #1f251d);
+    background: linear-gradient(to right, #000, #1e1e1e);
 	border-radius: 15px;
 }
 .banner-box {
@@ -49,7 +49,7 @@ span b {
 .artist-text {
 line-height: 1;
 text-transform: uppercase;
-font-family: rfm_bold;
+font-family: hfm_main;
 font-size: 165%;
 color: rgb(255 255 255);
 text-align: center;
@@ -57,7 +57,7 @@ text-align: center;
 .title-text {
 line-height: 1;
 text-transform: uppercase;
-font-family: rfm_light;
+font-family: hfm_main;
 font-size: 165%;
 color: rgb(255 255 255);
 text-align: center;
@@ -65,14 +65,14 @@ font-style: normal;
 }
 .listeners-text {
 line-height: 1;
-font-family: rfm_bold;
+font-family: hfm_main;
 font-size: 100%;
 color: rgb(255 255 255);
 text-align: center;
 }
 .listeners-text2 {
 line-height: 1;
-font-family: rfm_icon;
+font-family: hfm_main;
 font-size: 130%;
 color: rgb(255 255 255);
 text-align: center;
